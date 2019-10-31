@@ -21,7 +21,7 @@ type Contact {
   note: String!
   gender: String!
   address: String!
-  groups: [Group!] @relation(name: "ContactGroup" link: INLINE)
+  groups: [Group!] @relation(name: "ContactGroup" link: TABLE)
 }
 
 type Group {
